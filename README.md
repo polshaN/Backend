@@ -10,21 +10,6 @@ This repository contains my **first university project** exploring **microservic
 
 ---
 
-## **Table of Contents**
-
-- [Project Overview](#project-overview)
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Microservices](#microservices)
-- [Authentication](#authentication)
-- [Frontend](#frontend)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## **Project Overview**
 
 This project demonstrates the **use of microservices** in a university context. It is designed to handle multiple responsibilities separately, enabling:
@@ -39,17 +24,18 @@ This project demonstrates the **use of microservices** in a university context. 
 ## **Architecture**
 
 The project uses a **microservices architecture** with an **API Gateway** managing all endpoints. Each service has a distinct responsibility and communicates through the gateway.  
+| Service     | Responsibility                        | Tech/Notes                                                                    |
+| ----------- | ------------------------------------- | -------------------------------------------------                             |
+| Service 1   | Handles core data processing          | TypeScript, MongoDB                                                           |
+| Authentication| Integrated Keycloack, provides roles| TypeScript, tocken validation and access control                              |
+| Backend     | Miscellaneous auxiliary tasks         | TypeScript, separate database models,no overly complex functions              |
+| API Gateway | Central routing & endpoint management | Express.js, routes all requests to proper service                             |
 
-**High-level flow:**
-
-Frontend (Vue.js/JS)
-|
-API Gateway
-|
-| | | | |
-Service1 Service2 Service3 Service4
-|
-MongoDB
+Frontend
+Built with Vue.js + JavaScript
+Communicates with backend through API Gateway
+Handles authentication redirects and token storage
+Provides a user-friendly interface for interacting with microservices
 
 ---
 
