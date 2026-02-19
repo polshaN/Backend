@@ -26,14 +26,13 @@ This project demonstrates the **use of microservices** in a university context. 
 The project uses a **microservices architecture** with an **API Gateway** managing all endpoints. Each service has a distinct responsibility and communicates through the gateway.  
 | Service     | Responsibility                        | Tech/Notes                                                                    |
 | ----------- | ------------------------------------- | -------------------------------------------------                             |
-| Service 1   | Handles core data processing          | TypeScript, MongoDB                                                           |
 | Authentication| Integrated Keycloack, provides roles| TypeScript, tocken validation and access control                              |
-| Backend     | Miscellaneous auxiliary tasks         | TypeScript, separate database models,no overly complex functions              |
+| Backend     | Miscellaneous auxiliary tasks         | MongoDB, separate database models,no overly complex functions                 |
 | API Gateway | Central routing & endpoint management | Express.js, routes all requests to proper service                             |
 
-Frontend
-Built with Vue.js + JavaScript
-Communicates with backend through API Gateway
+## **Frontend**
+Built with **Vue.js + JavaScript**
+Communicates with backend through **API Gateway**
 Handles authentication redirects and token storage
 Provides a user-friendly interface for interacting with microservices
 
