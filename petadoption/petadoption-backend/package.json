@@ -1,0 +1,47 @@
+{
+  "name": "petadoption",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "vite-node src/app.ts",
+    "test": "vitest --no-file-parallelism",
+    "seed": "vite-node src/database/seeder.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@node-oauth/express-oauth-server": "^4.1.4",
+    "body-parser": "^2.2.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "jsonwebtoken": "^9.0.3",
+    "jwks-rsa": "^3.2.0",
+    "keycloak-connect": "^21.1.2",
+    "mongodb": "^6.19.0",
+    "mongoose": "^8.19.3",
+    "multer": "^2.0.2",
+    "reflect-metadata": "^0.2.2",
+    "supertest": "^7.1.4",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "vite-node": "^2.1.9"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.19.7",
+    "@types/supertest": "^6.0.3",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "type": "module"
+}

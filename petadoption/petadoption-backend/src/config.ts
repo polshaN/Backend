@@ -1,0 +1,16 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+
+export const Config = {
+    port: process.env.PORT ? parseInt(process.env.PORT) : 5000,
+    mongo: {
+        url: process.env.MONGO_URL || "mongodb://localhost:27018",
+        dbName: process.env.MONGO_DB_NAME || "petdb",
+    },
+    keycloak: {
+        baseUrl: process.env.KEYCLOAK_BASE_URL,
+        issuerUrl: process.env.KEYCLOAK_ISSUER_URL || process.env.KEYCLOAK_BASE_URL,
+        realm: process.env.KEYCLOAK_REALM,
+        clientId: process.env.KEYCLOAK_CLIENT_ID,
+    }
+};
